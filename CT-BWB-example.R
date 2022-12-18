@@ -1,6 +1,5 @@
 
 rm(list=ls()) 
-setwd("/Users/crbaek/Dropbox/Public/cp-hdts/github")
 library(hdbinseg)
 source("CT-BWB-library.R")
 
