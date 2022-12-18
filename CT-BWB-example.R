@@ -51,7 +51,7 @@ out5$ms.max
 out5$ms.sum
 
 
-## If you do not want to consider spatial correlations in BWB, take spatial=FALSE.
+## If you do not want to consider spatial correlations in bootstrap, take spatial=FALSE.
 ## Then, it gives BWB of Jirak(2015) only considering temporal correlations
 out11 = CTBWB.binary(Y, do.parallel = TRUE, n.cl=10, type=1, spatial=FALSE);
 out12 = CTBWB.binary(Y, do.parallel = TRUE, n.cl=10, type=2, spatial=FALSE);
