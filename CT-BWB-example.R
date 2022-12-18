@@ -3,6 +3,14 @@ rm(list=ls())
 library(hdbinseg)
 source("CT-BWB-library.R")
 
+## This code illustrate CTBWB with one change-point
+## E(2) error is used
+## dimension =100, TS length=100
+## Change-point is at 40 with jump size .4
+## Sparse signal subject to change only 4 dimensions (out of 100)
+## For E1 error in Ducker et al. (2023), take DGP=1
+## For E3 error in Ducker et al. (2023), take DGP=3
+
 DGP=2;
 rho=.8; n=100; p=100;
 location = c(floor(.4*n));
